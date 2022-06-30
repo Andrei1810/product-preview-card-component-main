@@ -140,7 +140,8 @@ sup{
 	img{
 		content:url("images/image-product-desktop.jpg");
 		width:50%;
-		border-radius:10px 0px 0px 10px
+		border-radius:10px 0px 0px 10px;
+		object-fit: cover;
 	}
 	.text{
 		width:40%;
