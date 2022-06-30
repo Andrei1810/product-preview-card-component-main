@@ -1,0 +1,149 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Start*/
+body{
+	background-color: hsl(30, 38%, 92%);
+}
+main{
+	background-color: hsl(0, 0%, 100%);
+	width:92%;
+	display: flex;
+	flex-direction:column;
+	margin:5vh auto;
+	padding-bottom: 4vh;
+	font-family: "Montserrat";
+}
+img{
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+.text{
+	width:90%;
+	margin:0 auto;
+}
+.text>h1{
+	font-family: "Fraunces";
+	display: inline-block;
+	font-weight: 700;
+	color:hsl(212, 21%, 14%);
+}
+.button{
+	display:block;
+	width:100%;
+	text-align: center;
+	font-weight: 700;
+	height:9vh;
+	font-family: "Montserrat";
+	background-color:  hsl(158, 36%, 37%);
+}
+.button p::after{
+	position: absolute;
+	left:25%;
+	content:url("images/icon-cart.svg")
+}
+.button p{
+
+	position:relative;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:hsl(0, 0%, 100%);
+}
+.button:hover{
+	cursor: pointer;
+	background-color:hsl(158, 50%, 15%);
+}
+h5{
+	margin:4vh auto;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing:0.5rem;
+	color:hsl(228, 12%, 48%);
+}
+h1{
+	margin-bottom: 2.5vh;
+}
+.p1{
+	font-size: 14px;
+	line-height: 1.6;
+	color:hsl(228, 12%, 48%);
+	font-weight:500;
+	margin-bottom: 9vh;
+}
+sup{
+	margin-left: 3vh;
+	display:inline-block;
+	color:hsl(228, 12%, 48%);
+	margin-bottom: 2vh;
+}
+.price{
+	margin-bottom: 2vh;
+}
+.price h1{
+	color:hsl(158, 36%, 37%);
+	display: inline;
+	font-family: "Fraunces";
+	font-weight: 700;
+}
+.button,main{
+	border-radius:10px;
+}
+@media screen and (min-width:1024px){
+	main{
+		position:absolute;
+		flex-direction:row;
+		width:50%;
+		height:70vh;
+		padding-bottom:0;
+	    top:10%;
+		left:25%;
+
+	}
+	img{
+		content:url("images/image-product-desktop.jpg");
+		width:50%;
+		border-radius:10px 0px 0px 10px
+	}
+	.text{
+		width:40%;
+		margin:0 auto;
+	}
+}
